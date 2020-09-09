@@ -4,8 +4,6 @@ DISTRO=apricot
 MIRROR=http://packages.deepin.com/deepin/dists/
 DIR_TRABAJO=~/
 
-echo $DIR_TRABAJO
-
 cd $DIR_TRABAJO
 
 if [[ $(curl $MIRROR 2> /dev/null | grep "$DISTRO") ]]; then
