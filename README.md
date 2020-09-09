@@ -12,6 +12,8 @@ Ejecuten los siguientes comandos.
 
 `echo "*/15 * * * * ~/nuevadistro.sh" | sudo tee -a /var/spool/cron/crontabs/$(whoami)`
 
+`sudo service cron restart`
+
 Esto descarga un script que revisa cada 15 minutos si ya agregaron apricot al repositorio principal de Deepin (http://packages.deepin.com/deepin/dists/).
 
 Para dejar de ejecutar el script en cron, ejecutan
